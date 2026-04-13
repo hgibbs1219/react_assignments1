@@ -17,7 +17,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #d81159;
 }
 
 .project-card {
@@ -44,9 +44,9 @@
   padding: 1rem;
   margin-top: 2rem;
 
-  background-color: red;
+  background-color: #ffbc42;
   border-top: 1px solid #ccc;
 
   font-size: 0.9rem;
-  color: #555;
+  color: #0496ff;
 }
