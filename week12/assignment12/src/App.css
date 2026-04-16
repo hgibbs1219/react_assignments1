@@ -1,0 +1,52 @@
+/* ── Root container ─────────────────────────────────────────
+   Centers the entire app and caps its width on wide screens  */
+#root {
+  max-width: 1280px;
+  /* stop the layout from stretching too wide */
+  margin: 0 auto;
+  /* center the container horizontally */
+  padding: 2rem;
+  /* breathing room on all sides */
+  text-align: center;
+  /* center inline content like headings */
+}
+
+/* BLOCK: project (page-level container) */
+.project {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+}
+
+.project-card {
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+
+  border: 1px solid #646cff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ELEMENT of project */
+.project__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ELEMENT */
+/* BLOCK: app-footer */
+.app-footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+
+  background-color: red;
+  border-top: 1px solid #ccc;
+
+  font-size: 0.9rem;
+  color: #555;
+}
