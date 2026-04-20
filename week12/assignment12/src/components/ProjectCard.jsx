@@ -1,4 +1,4 @@
-function ProjectCard({ name, description, url, image, githubPagesUrl }) {
+function ProjectCard({ name, description, url, image}) {
     return (
         <div className="project-card">
             <div className="image">
