@@ -1,5 +1,5 @@
-🎨 Interactive Portfolio – p5.js + React
-✨ Overview
+Interactive Portfolio – p5.js + React
+
 
 This project is a curated portfolio of interactive sketches built with p5.js and presented through a React application. Each piece explores motion, user interaction, and creative coding, combining visual design with dynamic behavior.
 
