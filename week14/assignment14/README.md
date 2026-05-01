@@ -1,16 +1,70 @@
-# React + Vite
+🎨 Interactive Portfolio – p5.js + React
+✨ Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a curated portfolio of interactive sketches built with p5.js and presented through a React application. Each piece explores motion, user interaction, and creative coding, combining visual design with dynamic behavior.
 
-Currently, two official plugins are available:
+Rather than a static gallery, this portfolio acts as a small ecosystem of experiments — where code becomes a medium for creativity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🧠 Features
+🎮 Interactive sketches built with p5.js
+⚛️ Component-based architecture using React
+🖼️ Dynamic project rendering from structured data
+🔍 Toggleable project descriptions
+🌐 External links to live sketches
+🛠️ Tech Stack
+React
+Vite
+p5.js
+JavaScript (ES6+)
+CSS
+📁 Project Structure
+src/
+│── components/
+│   ├── ProjectCard.jsx
+│   ├── ProjectList.jsx
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│
+│── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Projects.jsx
+│
+│── data/
+│   └── projectData.jsx
+🚀 Getting Started
+1. Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+2. Install dependencies
+npm install
+3. Run the development server
+npm run dev
+4. Build for production
+npm run build
+🌍 Deployment
 
-## React Compiler
+This project is configured for deployment via GitHub Pages using GitHub Actions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🎯 Purpose
 
-## Expanding the ESLint configuration
+This portfolio showcases creative coding work while demonstrating skills in:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+UI/UX design
+Component-based development
+Interactive media
+Frontend architecture
+👩‍💻 About Me
+
+Hi, I’m Hannah — a UX designer who enjoys making things look good and make sense. I like building interactive, slightly chaotic (in a fun way) projects where art and code collide and sometimes behave.
+
+Outside of design, I photograph concerts, notice tiny details most people miss, and hang out with five very opinionated chihuahuas.
+
+📌 Future Improvements
+Add filtering or search functionality
+Enhance animations and transitions
+Improve accessibility (ARIA, keyboard navigation)
+Expand project collection
+📄 License
+
+This project is for educational and portfolio purposes.
