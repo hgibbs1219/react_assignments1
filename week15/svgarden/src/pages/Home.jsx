@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ImageCard from "../components/ImageCard.jsx";
-import ImageData from "../data/ImageData.jsx";
+import ImageData from "../data/imageData.jsx";
 import CategoryCard from "../components/CategoryCard.jsx";
 
 function Home() {
