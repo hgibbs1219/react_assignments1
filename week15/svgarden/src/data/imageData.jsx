@@ -1,4 +1,4 @@
-const ImageData = [
+const imageData = [
   //Animals
   {
     id: 1,
@@ -534,4 +534,4 @@ const ImageData = [
   },
 ];
 
-export default ImageData;
+export default imageData;
