@@ -13,13 +13,13 @@ function Home() {
 
     const categories = [
         ...new Set(
-            imageData
+            ImageData
                 .filter((img) => img && img.category)
                 .map((img) => img.category.trim())
         ),
     ];
 
-    const filteredImages = imageData.filter(
+    const filteredImages = ImageData.filter(
         (img) =>
             img &&
             img.category &&
@@ -27,7 +27,7 @@ function Home() {
     );
 
     const getPreview = (category) => {
-        const images = imageData.filter(
+        const images = ImageData.filter(
             (img) =>
                 img &&
                 img.category &&
