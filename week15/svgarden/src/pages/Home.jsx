@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ImageCard from "../components/ImageCard.jsx";
-import imageData from "../data/imageData.js";
+import imageData from "../data/ImageData.js";
 import CategoryCard from "../components/CategoryCard.jsx";
 
 function Home() {
@@ -16,14 +16,14 @@ function Home() {
     // Get unique categories
     const categories = [
         ...new Set(
-            imageData
+            ImageData
                 .filter((img) => img?.category)
                 .map((img) => img.category.trim())
         ),
     ];
 
     // Filter images by selected category
-    const filteredImages = imageData.filter(
+    const filteredImages = ImageData.filter(
         (img) =>
             img?.category &&
             img.category.trim() === selectedCategory
@@ -31,13 +31,13 @@ function Home() {
 
     // Get preview image for category card
     const getPreview = (category) => {
-        const images = imageData.filter(
+        const images = ImageData.filter(
             (img) =>
                 img?.category &&
                 img.category.trim() === category
         );
 
-        return images.length
+        return Images.length
             ? images[0].url
             : "/fallback.svg";
     };
