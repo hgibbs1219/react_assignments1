@@ -1,47 +1,51 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ImageCard from "../components/ImageCard.jsx";
-import ImageData from "/data/ImageData.jsx";
+import imageData from "../data/imageData.js";
 import CategoryCard from "../components/CategoryCard.jsx";
 
 function Home() {
     const location = useLocation();
 
+    const [selectedCategory, setSelectedCategory] = useState(null);
+
     useEffect(() => {
         setSelectedCategory(null);
     }, [location]);
-    const [selectedCategory, setSelectedCategory] = useState(null);
 
+    // Get unique categories
     const categories = [
         ...new Set(
-            ImageData
-                .filter((img) => img && img.category)
+            imageData
+                .filter((img) => img?.category)
                 .map((img) => img.category.trim())
         ),
     ];
 
-    const filteredImages = ImageData.filter(
+    // Filter images by selected category
+    const filteredImages = imageData.filter(
         (img) =>
-            img &&
-            img.category &&
+            img?.category &&
             img.category.trim() === selectedCategory
     );
 
+    // Get preview image for category card
     const getPreview = (category) => {
-        const images = ImageData.filter(
+        const images = imageData.filter(
             (img) =>
-                img &&
-                img.category &&
+                img?.category &&
                 img.category.trim() === category
         );
 
-        return images.length ? images[0].url : "/fallback.svg";
+        return images.length
+            ? images[0].url
+            : "/fallback.svg";
     };
 
     return (
         <div className="page-grid">
 
-            {/* 🧭 CATEGORY VIEW */}
+            {/* CATEGORY VIEW */}
             {!selectedCategory && (
                 <div className="category-grid">
                     {categories.map((cat) => (
@@ -55,6 +59,7 @@ function Home() {
                 </div>
             )}
 
+            {/* GALLERY VIEW */}
             {selectedCategory && (
                 <div>
                     <button
